@@ -1,9 +1,9 @@
 <template>
     <div class="dog-info">
         <div class="container d-flex">
-            <img src="dogg.jpg" alt="Dog Picture">
+            <img src="" alt="Dog Picture">
             <div>
-                <h2>Name: <strong>Dog</strong></h2>
+                <p><strong>Name:</strong> Dog</p>
                 <p><strong>Surname:</strong> Dog</p>
                 <p><strong>Vârstă:</strong> 3 ani</p>
                 <p><strong>Vaccin:</strong> B2, C1, C2</p>
@@ -22,7 +22,22 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
 
 .dog-info {
     display: flex;
