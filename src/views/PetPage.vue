@@ -1,7 +1,6 @@
 <template>
     <IdSection/>
     <FormSection/>
-    <h1>Pet</h1>
 </template>
 
 <script>
