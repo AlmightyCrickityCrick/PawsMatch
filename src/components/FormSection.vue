@@ -173,11 +173,9 @@
         border: 1px solid #383838;
         border-radius: 7px;
     }
-
-    select {
-        color: black;
+    input, option, select {
+        font-family: "Nunito", sans-serif;
     }
-
     .radio-group input {
         margin-right: 10px;
     }
@@ -205,9 +203,8 @@
     .submit-btn:active {
         color: white;
         background: rgb(53, 77, 50);
-        box-shadow: 0 0;
-        top: 4px;
-        left: 4px;
+        box-shadow: none;
+        transform: translate(4px,4px);
     }
 
     .color-p {
@@ -221,7 +218,7 @@
     }
     .box {
         display: flex;
-        padding: 2px 5px;
+        padding: 5px 10px;
         border-radius: 15px;
         background-color: rgb(224, 224, 224);
         margin: 5px 0;
