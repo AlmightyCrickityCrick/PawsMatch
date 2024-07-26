@@ -1,16 +1,27 @@
 <template>
     <div class="mid">
-        <div class="el">Câini</div>
-        <div class="el">Pisici</div>
-        <div class="el">Iepuri</div>
-        <div class="el">Raton</div>
-        <div class="el">Hamster</div>
+        <div class="el" id="c" @click="getPets">Câini</div>
+        <div class="el" id="p" @click="getPets">Pisici</div>
+        <div class="el" id="i" @click="getPets">Iepuri</div>
+        <div class="el" id="r" @click="getPets">Raton</div>
+        <div class="el" id="h" @click="getPets">Hamster</div>
     </div>
 </template>
 
 <script>
     export default {
-        
+        emits: ['filter'],
+        methods: {
+            getPets(event) {
+                switch(event.target.id){
+                    case 'c': this.$emit('filter',{id: 0});break;
+                    case 'p': this.$emit('filter',{id: 1});break;
+                    case 'i': this.$emit('filter',{id: 2});break;
+                    case 'r': this.$emit('filter',{id: 3});break;
+                    case 'h': this.$emit('filter',{id: 4});break;
+                }; 
+            }
+        },
     }
 </script>
 
@@ -36,6 +47,7 @@
 
     .el:hover {
         text-decoration: underline 1px wavy #752222;
+        cursor: pointer;
     }
 
 </style>

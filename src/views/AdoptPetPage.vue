@@ -1,5 +1,5 @@
 <template>
-    <Filter/>
+    <Filter @filter="filterPets($event)"/>
 </template>
 
 <script>
@@ -8,9 +8,25 @@
         components: {
             Filter,
         },
+        computed: {
+            currentList() {
+                if(this.currentFilter != null)
+                    return this.currentFilter; 
+            }
+        },
+        data() {
+            return {
+                currentFilter: null,
+            }
+        },
+        methods: {
+            filterPets(event) {
+                this.currentFilter = event.id;
+            }
+        },
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
