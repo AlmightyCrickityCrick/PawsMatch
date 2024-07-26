@@ -47,11 +47,14 @@
 
     .active {
         font-weight: 700;
+        color: rgb(42, 42, 42);
     }
 
     .mid {
+        font-family: Nunito, sans-serif;
+        font-size: 17pt;
         margin: 0 auto;
-        padding: 10px 50px;
+        padding: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         background-color:rgb(201, 201, 201) ;
@@ -62,9 +65,26 @@
         text-align: center;
     }
 
+    .el {
+        color: rgb(60, 60, 60);
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+
     .el:hover {
-        text-decoration: underline 1px wavy #752222;
+        color: #000000;
         cursor: pointer;
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
+        background-color:rgb(159, 159, 159) ;
+        border-radius: 4px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.076), 0 6px 20px 0 rgba(138, 125, 155, 0.234);
+    }
+    .active:hover {
+        font-weight: 700;
     }
 
 </style>
