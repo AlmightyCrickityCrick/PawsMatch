@@ -1,5 +1,5 @@
 <template>
-    <div class="dog-info">
+    <div class="pet-info">
         <div class="container d-flex">
             <div>
                 <img :src='pet.image_link' alt="Pet Picture">
@@ -60,6 +60,10 @@
         font-family: "Merriweather", sans-serif;
     }
 
+    .pet-info {
+        padding-top: 80px;
+    }
+
     .container {
         width: 55%;
         margin: 20px auto;
@@ -76,13 +80,13 @@
         grid-template-columns: 2fr 3fr;
         grid-column-gap: 70px;
     }
-    .dog-info h2,
-    .dog-info p {
+    h2, p {
         margin: 5px 0;
         line-height: 28px;
+        text-align: justify;
     }
 
-    .dog-info p strong {
+    strong {
         color: #752222;
     }
 
@@ -91,7 +95,7 @@
     }
 
     img {
-        margin: 3px 10px 3px 10px;
+        margin: 3px 10px;
         width: 100%;
         max-height: 470px;
         border-radius: 7px;
