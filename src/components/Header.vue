@@ -46,10 +46,12 @@ import {RouterLink} from "vue-router"
 
     .header {
         padding: 10px 20px;
+        margin: 0;
         width: 100%;
         height: 60px;
         display: block;
         background-color: white;
+        position: fixed;
     }
 
     .header a {

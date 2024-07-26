@@ -30,8 +30,8 @@
 .gallery-item {
     background-color: #E0E0E0;
     border-radius: 10px;
-    width: min-content;
-    height: 323px;
+    width: 245px;
+    height: 275px;
     display: flex;
     flex-direction: column;
     align-items: center;
