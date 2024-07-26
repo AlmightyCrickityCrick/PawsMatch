@@ -62,6 +62,7 @@
 
     .pet-info {
         padding-top: 80px;
+        margin-bottom: 60px;
     }
 
     .container {

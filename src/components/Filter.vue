@@ -57,7 +57,7 @@
         padding: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        background-color:rgb(201, 201, 201) ;
+        background-color: #E0E0E0 ;
         justify-content: center;
         border-radius: 15px;
         width: 80%;
@@ -78,7 +78,7 @@
         cursor: pointer;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
-        background-color:rgb(159, 159, 159) ;
+        background-color:rgba(159, 159, 159, 0.167) ;
         border-radius: 4px;
         font-weight: 600;
         box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.076), 0 6px 20px 0 rgba(138, 125, 155, 0.234);

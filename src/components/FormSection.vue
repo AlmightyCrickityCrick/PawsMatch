@@ -139,6 +139,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    input {
+        background-color: #E9E9ED;
+    }
+
     *{
         box-sizing: border-box;
     }
@@ -170,7 +174,7 @@
     input[type="tel"],
     select {
         padding: 2px 3px;
-        border: 1px solid #383838;
+        border: 1px solid #909090;
         border-radius: 7px;
     }
     input, option, select {
@@ -188,10 +192,10 @@
         border-radius: 15px;
         font-size: 25px;
         text-align: center;
-        margin: 35px auto 0;
+        margin: 25px auto 0;
         font-family: "Lora",sans-serif;
         font-weight: 700;
-        box-shadow: 4px 4px rgb(186, 186, 186);
+        box-shadow: 0px 7px rgb(161, 161, 161);
         background-color: #f2f2f2;
     }
 
@@ -201,10 +205,10 @@
     }
 
     .submit-btn:active {
-        color: white;
-        background: rgb(53, 77, 50);
+        color: rgba(255, 255, 255, 0.858);
+        background: rgb(45, 66, 42);
         box-shadow: none;
-        transform: translate(4px,4px);
+        transform: translate(0px,7px);
     }
 
     .color-p {
@@ -218,10 +222,10 @@
     }
     .box {
         display: flex;
-        padding: 5px 10px;
+        padding: 2px 13px;
         border-radius: 15px;
         background-color: rgb(224, 224, 224);
-        margin: 5px 0;
+        margin: 9px 0;
         align-items: center;
         align-content: center;
         font-family: "Nunito", serif;

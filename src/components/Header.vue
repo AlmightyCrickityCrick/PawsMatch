@@ -45,23 +45,26 @@ import {RouterLink} from "vue-router"
 
 
     .header {
-        padding: 10px 20px;
+        padding: 12px 20px;
+        padding-right: 40px;
         margin: 0;
         width: 100%;
-        height: 60px;
+        height: 65px;
         display: block;
         background-color: white;
         position: fixed;
+        align-items: center;
     }
 
     .header a {
         line-height: 0px;
         float: left;
         display: block;
+        margin: 0 10px 0 5px;
     }
 
     .header img {
-        height: 2.6rem;
+        height: 45px;
     }
 
     .header nav {
