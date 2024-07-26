@@ -10,11 +10,10 @@
 import PetList from '@/components/PetList.vue';
     export default {
         components: {
-            Filter,
+            Filter,  PetList
+
         },
-        components: {
-            PetList
-        }
+
     }
 </script>
 
