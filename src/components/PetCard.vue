@@ -54,7 +54,8 @@
         margin-bottom: 20px;
     }
 
-    RouterLink {
+    a {
         text-decoration: none;
+        color: black;
     }
 </style>
