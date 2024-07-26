@@ -27,7 +27,11 @@
 
         computed: {
             currentPetList() {
-                return this.petList.filter((pet) => pet.type == this.filter)
+                if (this.filter == null) {
+                    return this.petList
+                } else {
+                    return this.petList.filter((pet) => pet.type == this.filter)
+                }
                 
             }
         },
