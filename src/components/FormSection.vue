@@ -184,7 +184,6 @@
 
     .submit-btn {
         align-items: center;
-        background: white;
         color: rgb(53, 77, 50);
         border: 1px solid rgb(53, 77, 50);
         padding: 10px 75px;
@@ -205,6 +204,7 @@
 
     .submit-btn:active {
         color: white;
+        background: rgb(53, 77, 50);
         box-shadow: 0 0;
         top: 4px;
         left: 4px;
