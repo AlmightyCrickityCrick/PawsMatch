@@ -30,7 +30,7 @@
 .gallery-item {
     background-color: #E0E0E0;
     border-radius: 10px;
-    width: 243px;
+    width: min-content;
     height: 323px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 
 .gallery-item img {
 height: 225px;
-width: 100%;
+width: 210px;
 gap: 0px;
 border-radius: 7px;
 object-fit: cover;

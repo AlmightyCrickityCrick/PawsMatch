@@ -1,13 +1,14 @@
 <template>
     <div>
-        <PetCard 
-        v-for="pet in petList"
-        :key="pet.id"
-        :id="pet.id"
-        :name="pet.name"
-        :surname="pet.surname"
-        :image_link="pet.image_link"/>
-
+        <div class="gallery">
+            <PetCard 
+            v-for="pet in currentPetList"
+            :key="pet.id"
+            :id="pet.id"
+            :name="pet.name"
+            :surname="pet.surname"
+            :image_link="pet.image_link"/>
+    </div>
     </div>
 </template>
 
@@ -15,9 +16,19 @@
     import {myaxios} from '../axios';
     import PetCard from './PetCard.vue';
     export default {
+        props:{
+            filter: Number
+        },
         data() {
             return {
                 petList: [],
+            }
+        },
+
+        computed: {
+            currentPetList() {
+                return this.petList.filter((pet) => pet.type == this.filter)
+                
             }
         },
         components:{
@@ -34,5 +45,17 @@
 </script>
 
 <style scoped>
+.gallery {
+    box-sizing: border-box;
+    width: 1500px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: Nunito, sans-serif;
+    
+}
+
 
 </style>
