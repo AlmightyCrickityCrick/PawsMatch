@@ -62,10 +62,10 @@
 
     .container {
         width: 100%;
-        max-width: 525px;
+        max-width: 550px;
         margin: 20px auto;
         padding: 20px;
-        background: #fff;
+        background-color: rgb(224, 224, 224);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         font-size: 18px;
