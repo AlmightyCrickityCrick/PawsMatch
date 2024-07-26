@@ -218,7 +218,7 @@
     }
     .box {
         display: flex;
-        padding: 2px 5px;
+        padding: 5px 10px;
         border-radius: 15px;
         background-color: rgb(224, 224, 224);
         margin: 5px 0;
