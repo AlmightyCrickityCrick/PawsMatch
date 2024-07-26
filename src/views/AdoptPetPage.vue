@@ -10,8 +10,7 @@
     import PetList from '../components/PetList.vue';
     export default {
         components: {
-            Filter,  PetList
-
+            Filter,  PetList,
         },
         data() {
             return {
