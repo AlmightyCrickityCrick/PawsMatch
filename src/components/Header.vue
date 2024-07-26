@@ -74,7 +74,7 @@ import {RouterLink} from "vue-router"
     .header ul li a {
         text-decoration: none;
         color: #000000;
-        font-size: 28px;
+        font-size: 18pt;
         transition: color 0.3s ease;
         font-family: "Merriweather", serif;
         font-weight: 400;

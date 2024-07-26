@@ -4,7 +4,7 @@
             <div>
                 <img :src='pet.image_link' alt="Pet Picture">
             </div>
-            <div>
+            <div class="text">
                 <p><strong>Name: </strong>{{ pet.name }}</p>
                 <p><strong>Surname: </strong>{{ pet.surname }}</p>
                 <p><strong>Vârstă: </strong>{{ pet.age }} ani</p>
@@ -60,16 +60,19 @@
         font-family: "Merriweather", sans-serif;
     }
 
+    .text {
+        margin-left: -10px;
+    }
     .container {
-        width: 100%;
-        max-width: 550px;
+        width: 1050px;
+        height: min-content;
         margin: 20px auto;
         padding: 20px;
         background-color: rgb(224, 224, 224);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         font-size: 18px;
-        text-align: justify;
+        text-align: left;
     }
 
     .d-flex {
@@ -77,26 +80,26 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 20px;
     }
-
-    .dog-info img {
-        border-radius: 10px;
-        width: 100%;
-        height: auto;
-    }
-
     .dog-info h2,
     .dog-info p {
         margin: 5px 0;
-        line-height: 20px;
+        line-height: 28px;
     }
 
     .dog-info p strong {
-        color: #aa0000;
+        color: #752222;
     }
 
     .width1 {
         width: 100%;
     }
 
-
+    img {
+        margin: 3px 10px 3px 10px;
+        width: 500px;
+        height: 470px;
+        border-radius: 7px;
+        object-fit: cover;
+        outline: 4px solid black;
+    }
 </style>
