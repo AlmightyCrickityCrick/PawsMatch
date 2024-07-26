@@ -49,17 +49,15 @@
 </script>
 
 <style scoped>
-.gallery {
-    box-sizing: border-box;
-    width: 1500px;
-    margin: auto;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    font-family: Nunito, sans-serif;
-    
-}
+    .gallery {
+        box-sizing: border-box;
+        width: 80%;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-family: "Nunito", sans-serif;
+    }
 
 
 </style>

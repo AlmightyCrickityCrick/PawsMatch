@@ -1,7 +1,9 @@
 <template>
-    <div class="gallery-item">
-        <img :src='image_link' alt="Pet Picture">
-        <RouterLink :to="link">{{name}} {{ surname }}</RouterLink>
+    <div class="pet">
+        <div class="gallery-item">
+            <img :src='image_link' alt="Pet Picture">
+            <RouterLink :to="link">{{name}} {{ surname }}</RouterLink>
+        </div>
     </div>
 </template>
 
@@ -27,28 +29,32 @@
 </script>
 
 <style scoped>
-.gallery-item {
-    background-color: #E0E0E0;
-    border-radius: 10px;
-    width: 245px;
-    height: 275px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-    margin: 20px;
-    text-align: center;
+    .pet {
+        padding: 10px;
+    }
 
-}
+    .gallery-item {
+        background-color: #E0E0E0;
+        border-radius: 10px;
+        width: auto;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
 
-.gallery-item img {
-height: 225px;
-width: 210px;
-gap: 0px;
-border-radius: 7px;
-object-fit: cover;
-margin-bottom: 20px;
+    .gallery-item img {
+        width: 100%;
+        height: 225px;
+        gap: 0px;
+        border-radius: 7px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
 
-}
+    RouterLink {
+        text-decoration: none;
+    }
 </style>
