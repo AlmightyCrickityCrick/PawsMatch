@@ -1,18 +1,17 @@
 <template>
     <Filter @filter="filterPets($event)"/>
+    <div>
+        <PetList :filter="currentFilter"/>
+    </div>
 </template>
 
 <script>
     import Filter from '../components/Filter.vue';
+    import PetList from '../components/PetList.vue';
     export default {
         components: {
-            Filter,
-        },
-        computed: {
-            currentList() {
-                if(this.currentFilter != null)
-                    return this.currentFilter; 
-            }
+            Filter,  PetList
+
         },
         data() {
             return {
@@ -24,6 +23,7 @@
                 this.currentFilter = event.id;
             }
         },
+
     }
 </script>
 

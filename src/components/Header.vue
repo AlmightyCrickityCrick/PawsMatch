@@ -12,7 +12,7 @@
                     <RouterLink to="/">Home</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/pet">Adopt</RouterLink>
+                    <RouterLink to="/adopt">Adopt</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="/">About</RouterLink>

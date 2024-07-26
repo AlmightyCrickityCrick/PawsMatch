@@ -64,12 +64,12 @@
         margin-left: -10px;
     }
     .container {
-        width: 1050px;
+        width: 56%;
         height: min-content;
         margin: 20px auto;
         padding: 20px;
         background-color: rgb(224, 224, 224);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
         border-radius: 15px;
         font-size: 18px;
         text-align: left;
