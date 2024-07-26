@@ -1,16 +1,19 @@
 <template>
   <Header/>
-  <RouterView />
+  <div>
+    <RouterView />
+  </div>
+  <Footer/>
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
-import Header from './components/Header.vue';
+  import { RouterLink, RouterView } from 'vue-router';
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
 </script>
 
 <style scoped>
-    Header {
-      margin: 0%;
-      padding: 0%;
+    div {
+      padding-top: 65px;
     }
 </style>

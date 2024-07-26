@@ -1,13 +1,11 @@
 <template>
-    <div class="pad">
-        <div class="mid">
-            <div :class="this.id == null ? 'active' :''" class="el" id="x" @click="getPets">All</div>
-            <div :class="this.id == 0 ? 'active' :''" class="el" id="c" @click="getPets">Câini</div>
-            <div :class="this.id == 1 ? 'active' :''" class="el" id="p" @click="getPets">Pisici</div>
-            <div :class="this.id == 2 ? 'active' :''" class="el" id="i" @click="getPets">Iepuri</div>
-            <div :class="this.id == 3 ? 'active' :''" class="el" id="r" @click="getPets">Raton</div>
-            <div :class="this.id == 4 ? 'active' :''" class="el" id="h" @click="getPets">Hamster</div>
-        </div>
+    <div class="mid">
+        <div :class="this.id == null ? 'active' :''" class="el" id="x" @click="getPets">All</div>
+        <div :class="this.id == 0 ? 'active' :''" class="el" id="c" @click="getPets">Câini</div>
+        <div :class="this.id == 1 ? 'active' :''" class="el" id="p" @click="getPets">Pisici</div>
+        <div :class="this.id == 2 ? 'active' :''" class="el" id="i" @click="getPets">Iepuri</div>
+        <div :class="this.id == 3 ? 'active' :''" class="el" id="r" @click="getPets">Raton</div>
+        <div :class="this.id == 4 ? 'active' :''" class="el" id="h" @click="getPets">Hamster</div>
     </div>
 </template>
 
@@ -53,7 +51,7 @@
     .mid {
         font-family: Nunito, sans-serif;
         font-size: 17pt;
-        margin: 0 auto;
+        margin: 10px auto;
         padding: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

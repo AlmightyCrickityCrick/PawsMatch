@@ -139,10 +139,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    input {
-        background-color: #E9E9ED;
-    }
-
     *{
         box-sizing: border-box;
     }
@@ -156,7 +152,7 @@
     }
 
     .form-section {
-        padding: 20px;
+        padding: 0 20px 30px;
     }
 
     .form-section h2 {
@@ -192,10 +188,10 @@
         border-radius: 15px;
         font-size: 25px;
         text-align: center;
-        margin: 25px auto 0;
+        margin: 25px auto;
         font-family: "Lora",sans-serif;
         font-weight: 700;
-        box-shadow: 0px 7px rgb(161, 161, 161);
+        box-shadow: 0px 10px rgb(161, 161, 161);
         background-color: #f2f2f2;
     }
 
@@ -207,8 +203,8 @@
     .submit-btn:active {
         color: rgba(255, 255, 255, 0.858);
         background: rgb(45, 66, 42);
-        box-shadow: none;
-        transform: translate(0px,7px);
+        box-shadow: 0px 5px rgb(131, 131, 131);
+        transform: translate(0px,5px);
     }
 
     .color-p {

@@ -61,7 +61,6 @@
     }
 
     .pet-info {
-        padding-top: 80px;
         margin-bottom: 60px;
     }
 
@@ -101,6 +100,6 @@
         max-height: 470px;
         border-radius: 7px;
         object-fit: cover;
-        outline: 4px solid black;
+        outline: 2px solid black;
     }
 </style>
