@@ -1,10 +1,10 @@
 .section-work-data {
-    background-color: rgb(230, 228, 228);
+    background-color: #E0E0E0;
     text-align: center;
 }
 
 .counter-numbers {
-    font-size: 2.5rem;
+    font-size: 64px;
 }
 
 .grid-three-column {
@@ -22,5 +22,5 @@ body {
 }
 
 .grid-three-column p{
-	font-size: 1.3rem;
+	font-size: 26px;
 }
