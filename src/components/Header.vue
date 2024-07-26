@@ -57,7 +57,7 @@ header::after {
     display: block;
 }
 
-header>a {
+header a {
     line-height: 0px;
     float: left;
     display: block;
