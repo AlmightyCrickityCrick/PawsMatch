@@ -33,11 +33,13 @@ import {RouterLink} from "vue-router"
         margin-bottom: 20px;
         width: 400px;
         height: 325px;
+        z-index: 1;
     }
 
     /* Stiluri pentru textul principal */
     .text {
         font-size: 18px;
+        z-index: -1;
     }
 
     /* Stiluri pentru mesaj1 */

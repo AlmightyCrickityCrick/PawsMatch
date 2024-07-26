@@ -35,6 +35,7 @@ import {RouterLink} from "vue-router"
 <style scoped>
     *{
         box-sizing: border-box;
+        z-index: 2;
     }
 
     ul {
