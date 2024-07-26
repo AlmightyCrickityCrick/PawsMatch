@@ -70,6 +70,8 @@
 </template>
 
 <script>
+    import {useToast} from 'vue-toast-notification';
+    import 'vue-toast-notification/dist/theme-sugar.css';
     import { myaxios } from '../axios';
     export default {
         data() {
@@ -101,7 +103,15 @@
                 }
                 
                 if(this.name == '' || this.surname == '' || this.phone == '' || this.house_type == ''){
-                    
+                    const $toast = useToast();
+                    $toast.warning('There is some missing information!');
+                    return;
+                }
+                
+                if(this.cost_agreement == false){
+                    const $toast = useToast();
+                    $toast.error('You must agree with the cost!');
+                    return;
                 }
 
                 this.name = '';
