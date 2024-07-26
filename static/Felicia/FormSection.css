@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #444;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.dog-info {
+    display: flex;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.dog-info img {
+    border-radius: 8px;
+    margin-right: 20px;
+    max-width: 150px;
+    height: auto;
+}
+
+.dog-info div {
+    flex: 1;
+}
+
+.dog-info h2,
+.dog-info p {
+    margin: 5px 0;
+}
+
+.dog-info h2 {
+    color: #444;
+}
+
+.dog-info p strong {
+    color: #aa0000;
+}
+
+.dog-info p {
+    font-size: 14px;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.form-section h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    height: 5px;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form .radio-group {
+    margin-bottom: 15px;
+}
+
+form .radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .radio-group input {
+    margin-right: 10px;
+}
+
+form .submit-btn {
+    align-items: center;
+    background: white;
+    color: rgb(29, 29, 29);
+    border: 1px solid black;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #c4c4c4;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.width1 {
+    width: 80%;
+}
+
+.box {
+    border: rgb(228, 225, 225) 1px solid;
+    padding-top: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgb(228, 225, 225);
+}
+
+.top {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.color-p {
+  color: #4b0082;
+}
+.color-g {
+    color: rgb(196, 193, 193);
+}

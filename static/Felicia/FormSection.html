@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PawsMatch</title>
+    <link rel="stylesheet" href="FormSection.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>PawsMatch</h1>
+    </header>
+    <div class="dog-info">
+        <div class="container d-flex">
+            <img src="dogg.jpg" alt="Dog Picture">
+            <div>
+                <h2>Name: <strong>Dog</strong></h2>
+                <p><strong>Surname:</strong> Dog</p>
+                <p><strong>Vârstă:</strong> 3 ani</p>
+                <p><strong>Vaccin:</strong> B2, C1, C2</p>
+                <p class="width1"><strong>Biografie:</strong> Lorem ipsum isnhafjknaks fnkasjn
+                    qoiofnqijnkjasfjniojqfofnadjkfnoifdsjk
+                    fnsjkdfnslknewnl1snokfndllknalksnns lakn sadsadadwwwasadasf sf sdf
+                    dsfsdfwgergdjbskdjfbskjfoiwwbfjsjbd</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-section container">
+        <h2 class="color-p">Chestionar</h2>
+        <h2 class="color-g">Informatii generale</h2>
+        <form>
+            <div class="box">
+                <label for="nume">Nume:‎ ‎ ‎ ‎ </label>
+                <input type="text" id="nume" name="nume">
+            </div>
+            <div class="top"></div>
+            <div class="box">
+                <label for="prenume">Prenume:‎ ‎ ‎ ‎</label>
+                <input type="text" id="prenume" name="prenume">
+            </div>
+            <div class="top"></div>
+            <div class="box">
+                <label for="telefon">Nr. de telefon:‎ ‎ ‎ ‎</label>
+                <input type="tel" id="telefon" name="telefon">
+            </div>
+            <div class="top"></div>
+            <h2 class="color-g">Experiente si preferinte</h2>
+            <div class="box">
+                <label for="locatie">Unde locuiți?</label>
+                <input type="text" id="locatie" name="locatie">
+            </div>
+            <div class="top"></div>
+            <div class="box">
+                <div class="radio-group ">
+                    <label>Ați mai avut animale de companie? Câte?</label>
+                    <div class="d-flex">
+                        <label><input type="radio" name="animale" value="Nu"> Nu</label>
+                        <label><input type="radio" name="animale" value="1"> 1</label>
+                        <label><input type="radio" name="animale" value="2"> 2</label>
+                        <label><input type="radio" name="animale" value="3+"> 3+</label>
+                    </div>
+                </div>
+            </div>
+            <div class="top"></div>
+            <div class="box">
+                <div class="radio-group">
+                    <label>Sunteți conștient/ă de costurile viitoare necesare?</label>
+                    <div class="d-flex">
+                        <label><input type="radio" name="costuri" value="Nu"> Nu</label>
+                        <label><input type="radio" name="costuri" value="Da"> Da</label>
+                    </div>
+                </div>
+                <div class="top"></div>
+                <div class="box">
+                    <div class="radio-group">
+                        <label>Câte ore pe zi sunteți acasă?</label>
+                        <div class="d-flex">
+                            <label><input type="radio" name="ore" value="3-4"> 3-4</label>
+                            <label><input type="radio" name="ore" value="5-7"> 5-7</label>
+                            <label><input type="radio" name="ore" value="7-9"> 7-9</label>
+                            <label><input type="radio" name="ore" value="12+"> 12+</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button type="submit" class="submit-btn">Aplică!</button>
+                </div>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright © 2021-2024</p>
+    </footer>
+
 </body>
+
 </html>
