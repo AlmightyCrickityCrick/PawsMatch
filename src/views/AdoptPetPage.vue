@@ -1,12 +1,13 @@
 <template>
-    <div>
-
-    </div>
+    <Filter/>
 </template>
 
 <script>
+    import Filter from '../components/Filter.vue';
     export default {
-        
+        components: {
+            Filter,
+        },
     }
 </script>
 
