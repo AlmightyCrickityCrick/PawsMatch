@@ -40,11 +40,6 @@
         },
         methods: {            
             getPets() {
-                /*myaxios.get(`/pet`).then(
-                    (data) => {
-                        console.log(data);
-                    },
-                );*/
                 myaxios.get(`/pet/${this.id}`).then(
                     (data) => {
                         this.pet = data.data;
