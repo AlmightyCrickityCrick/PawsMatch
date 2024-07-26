@@ -1,5 +1,6 @@
 <template>
     <div class="mid">
+        <div class="el" id="x" @click="getPets">All</div>
         <div class="el" id="c" @click="getPets">Câini</div>
         <div class="el" id="p" @click="getPets">Pisici</div>
         <div class="el" id="i" @click="getPets">Iepuri</div>
@@ -14,6 +15,7 @@
         methods: {
             getPets(event) {
                 switch(event.target.id){
+                    case 'x': this.$emit('filter',{id: null});console.log("Nul");break;
                     case 'c': this.$emit('filter',{id: 0});break;
                     case 'p': this.$emit('filter',{id: 1});break;
                     case 'i': this.$emit('filter',{id: 2});break;

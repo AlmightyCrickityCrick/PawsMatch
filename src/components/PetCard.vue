@@ -27,26 +27,28 @@
 </script>
 
 <style scoped>
-    .gallery-item {
-        background-color: rgb(224, 224, 224);
-        border-radius: 10px;
-        width: 245px;
-        height: 275px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        position: relative;
-        margin: 20px;
-        text-align: center;
-    }
+.gallery-item {
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    width: min-content;
+    height: 323px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+    text-align: center;
 
-    .gallery-item img {
-    height: 225px;
-    width: 100%;
-    gap: 0px;
-    border-radius: 7px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    }
+}
+
+.gallery-item img {
+height: 225px;
+width: 210px;
+gap: 0px;
+border-radius: 7px;
+object-fit: cover;
+margin-bottom: 20px;
+
+}
 </style>
