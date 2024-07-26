@@ -9,5 +9,8 @@ import Header from './components/Header.vue';
 </script>
 
 <style scoped>
-  
+    Header {
+      margin: 0%;
+      padding: 0%;
+    }
 </style>
