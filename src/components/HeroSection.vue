@@ -1,8 +1,8 @@
 <template>
     <div class="ioi">
-        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/cat-dog-061647727-16x9_0.png?VersionId=92IFZ7jHhN8FStL8Gn1VqXJ78.kgsPX4"
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/03/cute-dog-and-cat-sitting-wallpaper.jpg"
             alt="Pets" style="width:100%;">
-        <div class="cen"><p>Fii și tu schimbarea în lumea această! <br>Găsește match-ul tău!</p></div>
+        <div class="cen"><p>Fii și tu schimbarea în lumea această! <br>Găsește <b>match-ul</b> tău!</p></div>
     </div>
 </template>
 
@@ -24,22 +24,27 @@
     }
 
     .cen {
-        padding: 20px;
-        width: 600px;
-        text-align: right;
+        width: 35%;
+        text-align: left;
         position: absolute;
         display: block;
         top: 38%;
-        left: 78%;
+        left: 23%;
         transform: translate(-50%, -50%);
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.36);
-        border-radius: 100%;
-        box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.199), 0px 0px 50px 50px rgba(0, 0, 0, 0.221);
+        color: rgb(255, 255, 255);/* From https://css.glass */
+background: rgba(255, 255, 255, 0.068);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(16.5px);
+-webkit-backdrop-filter: blur(16.5px);
         font-family: Merriweather, sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         font-style: light;
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    b {
+        color: #f5958e;
     }
 
 </style>

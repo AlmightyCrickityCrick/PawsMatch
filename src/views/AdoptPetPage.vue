@@ -30,7 +30,7 @@
 
 <style scoped>
     .page {
-        min-height: calc(100vh - 175px);
+        min-height: calc(100vh - 232px);
         margin: 0%;
         padding: 0%;
     }

@@ -21,6 +21,7 @@
 <style  scoped>
 
     .footer {
+        margin-top: 57px;
         background-color: rgba(135, 147, 147, 0.692);
         padding: 20px;
         text-align: center;
