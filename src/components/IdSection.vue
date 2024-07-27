@@ -4,7 +4,7 @@
             <div>
                 <img :src='pet.image_link' alt="Pet Picture">
             </div>
-            <div>
+            <div class="text">
                 <p><strong>Name: </strong>{{ pet.name }}</p>
                 <p><strong>Surname: </strong>{{ pet.surname }}</p>
                 <p><strong>Vârstă: </strong>{{ pet.age }} ani</p>
@@ -96,10 +96,15 @@
 
     img {
         margin: 3px 10px;
-        width: 100%;
-        max-height: 470px;
+        width: 450px;
+        height: 430px;
         border-radius: 7px;
         object-fit: cover;
         outline: 2px solid black;
+    }
+
+    .text {
+        padding: 10px;
+        margin-left: -50px;
     }
 </style>
