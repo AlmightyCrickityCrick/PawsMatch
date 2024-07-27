@@ -77,7 +77,7 @@
 
     .d-flex {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 70px;
     }
     h2, p {
@@ -96,15 +96,17 @@
 
     img {
         margin: 3px 10px;
-        width: 450px;
-        height: 430px;
+        max-width: 470px;
+        width: 100%;
+        height: 25vw;
+        max-height: 500px;
         border-radius: 7px;
         object-fit: cover;
         outline: 2px solid black;
     }
-
     .text {
         padding: 10px;
-        margin-left: -50px;
+        margin-left: -20px;
     }
+    
 </style>

@@ -44,6 +44,15 @@
         align-items: center;
         padding: 10px;
         text-align: center;
+        transition-duration: 0.3s;
+    }
+
+    .gallery-item:hover {
+        background-color: #bcbcbc;
+        border-radius: 14px;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
+        transition-duration: 0.3s;
+        box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.078), 0 6px 20px 0 rgba(138, 125, 155, 0.309);
     }
 
     .gallery-item img {

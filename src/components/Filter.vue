@@ -45,7 +45,7 @@
 
     .active {
         font-weight: 700;
-        color: rgb(42, 42, 42);
+        color: #a04039;
     }
 
     .mid {
@@ -72,7 +72,7 @@
     }
 
     .el:hover {
-        color: #000000;
+        color: #C4554D;
         cursor: pointer;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
