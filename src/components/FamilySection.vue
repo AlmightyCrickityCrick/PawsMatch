@@ -24,7 +24,7 @@
                     {
                         function: 'Frontend Static',
                         name: 'Cernat Doina',
-                        img: '../../public/Lina',
+                        img: '/Doina.jpg',
                     },
                     {
                         function: 'Frontend Static',
@@ -34,7 +34,7 @@
                     {
                         function: 'Frontend Static',
                         name: 'Vieru Felicia',
-                        img: '../../public/Lina',
+                        img: '/Felicia.jpg',
                     },
                     {
                         function: 'Frontend Static',
