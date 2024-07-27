@@ -49,7 +49,7 @@
                     {
                         function: 'Frontend dinamic',
                         name: 'Drelea Valeria',
-                        img: '../../public/Lina',
+                        img: '../../public/Valeria.jpg',
                     },
                     {
                         function: 'Frontend dinamic',
