@@ -205,8 +205,8 @@
     .submit-btn:active {
         color: rgba(255, 255, 255, 0.858);
         background: rgb(45, 66, 42);
-        box-shadow: 0px 5px rgb(131, 131, 131);
-        transform: translate(0px,5px);
+        box-shadow: 0px 0px #fff;
+        transform: translate(0px,10px);
     }
 
     .color-p {

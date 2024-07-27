@@ -9,22 +9,22 @@ body{
   /* width */
   ::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
+    height: 10px; 
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #AFB8C1; 
+    background: #F2F2F2; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #AAA5AC; 
+    background: rgb(186, 186, 186); 
     border-radius: 3px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #97848A; 
+    background: #C4554D; 
     border-radius: 9px;
   }
