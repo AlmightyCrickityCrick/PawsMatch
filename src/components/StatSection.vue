@@ -42,8 +42,7 @@
     .section-work-data {
         background-color: rgb(230, 228, 228);
         text-align: center;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
+        border-radius: 25px 25px 0 0;
         font-family: "Nunito", sans-serif;
         padding: 5vh 10vw 10vh;
     }
