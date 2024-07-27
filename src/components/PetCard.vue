@@ -1,8 +1,9 @@
 <template>
     <div class="pet">
         <div class="gallery-item">
+            <RouterLink :to="link">
             <img :src='image_link' alt="Pet Picture">
-            <RouterLink :to="link">{{name}} {{ surname }}</RouterLink>
+            {{name}} {{ surname }}</RouterLink>
         </div>
     </div>
 </template>
