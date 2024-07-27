@@ -125,6 +125,8 @@
                 myaxios.post(`/pet/${this.id}/adopt`,newForm).then(
                     (data) => {
                         console.log(data);
+                        const $toast = useToast();
+                        $toast.success('Your data has been successfully added!');
                     }
                 )
             }

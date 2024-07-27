@@ -22,44 +22,44 @@
             return {
                 familyMemberList: [
                     {
-                        function: 'Frontend static',
+                        function: 'Frontend Static',
                         name: 'Cernat Doina',
                         img: '../../public/Lina',
                     },
                     {
-                        function: 'Frontend static',
+                        function: 'Frontend Static',
                         name: 'Petreanu Andreea',
-                        img: '../../public/Andreea P.jpg',
+                        img: '/Andreea P.jpg',
                     },
                     {
-                        function: 'Frontend static',
+                        function: 'Frontend Static',
                         name: 'Vieru Felicia',
                         img: '../../public/Lina',
                     },
                     {
-                        function: 'Frontend static',
+                        function: 'Frontend Static',
                         name: 'Gîdîlică Arina',
-                        img: '../../public/Arina G.jpg',
+                        img: '/Arina G.jpg',
                     },
                     {
-                        function: 'Frontend dinamic',
+                        function: 'Frontend Dinamic',
                         name: 'Pidghirnîi Vlada',
-                        img: '../../public/vlada.jpg',
+                        img: '/vlada.jpg',
                     },
                     {
-                        function: 'Frontend dinamic',
+                        function: 'Frontend Dinamic',
                         name: 'Drelea Valeria',
-                        img: '../../public/Valeria.jpg',
+                        img: '/Valeria.jpg',
                     },
                     {
-                        function: 'Frontend dinamic',
+                        function: 'Frontend Dinamic',
                         name: 'Danu Anastasia',
-                        img: '../../public/Anastasia.jpg',
+                        img: '/Anastasia.jpg',
                     },
                     {
                         function: 'Mentoră',
                         name: 'Scripca Lina',
-                        img: "../../public/Lina.jpg",
+                        img: "/Lina.jpg",
                     },
                 ]
             }
