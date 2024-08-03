@@ -47,16 +47,13 @@
         width: 30px;
         height: 30px;
         border-radius: 10px;
-        padding: 1px;
-        border: 0 solid rgba(241, 125, 125, 0.45);
         transition-duration: 0.6s;
         transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
 
     .icon:hover {
         padding: 0px;
-        border: 1px solid rgba(241, 125, 125, 0.45);
-        box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.141), 0 6px 20px 0 rgba(138, 125, 155, 0.344);
+        box-shadow: 0 4px 8px 0 rgba(93, 100, 118, 0.141), 0 6px 20px 0 rgba(73, 57, 95, 0.344);
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
