@@ -73,7 +73,7 @@
 
     .el:hover {
         color: #C4554D;
-        cursor: pointer;
+        cursor: none;
         transition-duration: 0.3s;
         transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
         background-color:rgba(159, 159, 159, 0.167) ;

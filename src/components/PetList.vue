@@ -49,6 +49,9 @@
 </script>
 
 <style scoped>
+*:hover {
+        cursor: none;
+}
     .gallery {
         box-sizing: border-box;
         width: 80%;

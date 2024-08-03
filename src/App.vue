@@ -1,22 +1,22 @@
 <template>
-  <Header/>
+  <Header />
   <div>
     <RouterView />
   </div>
-  <Footer/>
+  <cursor/>
+  <Footer />
 </template>
 
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router';
-  import Header from './components/Header.vue';
-  import Footer from './components/Footer.vue';
+import { RouterLink, RouterView } from 'vue-router';
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import cursor from './components/cursor.vue';
 </script>
 
 <style scoped>
-    div {
-      padding-top: 65px;
-    }
-</style>
-<style>
-
+div {
+  padding-top: 65px;
+  cursor: none;
+}
 </style>

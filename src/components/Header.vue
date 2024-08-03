@@ -9,7 +9,7 @@
         <nav>
             <ul>
                 <li>
-                    <RouterLink to="/">Home</RouterLink>
+                    <RouterLink to="/" >Home</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="/adopt">Adopt</RouterLink>
@@ -29,13 +29,16 @@ import {RouterLink} from "vue-router"
         components:{
             RouterLink
         }
-}  
+    }  
 </script>
 
 <style scoped>
     *{
         box-sizing: border-box;
         z-index: 2;
+    }
+    *:hover {
+        cursor: none;
     }
 
     ul {

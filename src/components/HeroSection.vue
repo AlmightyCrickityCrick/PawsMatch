@@ -2,7 +2,7 @@
     <div class="ioi">
         <img src="https://www.pixelstalk.net/wp-content/uploads/2016/03/cute-dog-and-cat-sitting-wallpaper.jpg"
             alt="Pets" style="width:100%;">
-        <div class="cen"><p>Fii și tu schimbarea în lumea această! <br>Găsește <b>match-ul</b> tău!</p></div>
+        <div class="cen"><p>Fii și tu schimbarea în lumea aceasta! <br>Găsește <b>match-ul</b> tău!</p></div>
     </div>
 </template>
 
