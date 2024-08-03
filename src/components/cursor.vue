@@ -1,12 +1,14 @@
 <template>
-    <div ref="cursor">
-      <div class="cursor__ball cursor__ball--big">
-        <div class="circle"><p></p></div>
-      </div>
+    <div class="body">
+        <div ref="cursor">
+            <div class="cursor__ball cursor__ball--big">
+                <div class="circle"><p></p></div>
+            </div>
   
-      <div class="cursor__ball cursor__ball--small">
-        <div class="circle"><p></p></div>
-      </div>
+            <div class="cursor__ball cursor__ball--small">
+                <div class="circle"><p></p></div>
+            </div>
+        </div>
     </div>
   </template>
   
@@ -65,6 +67,9 @@
   </script>
   
   <style scoped>
+  .body {
+    cursor: none;
+  }
   .cursor__ball--big{
     width: 40px;
     height: 40px;
@@ -85,7 +90,7 @@
     height: 10px;
     padding: 0;
     margin: 3px 0 0 0px;
-    background: rgba(114, 11, 18, 0.472);
+    background: rgba(123, 30, 2, 0.472);
     border: 1px solid rgba(255, 148, 155, 0.452);
     border-radius: 300px;
 

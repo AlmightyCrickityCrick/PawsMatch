@@ -77,7 +77,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         justify-items: center;
-        padding: 0 10%;
+        padding: 0 20%;
     }
     .familia-noastra {
         text-align: center;

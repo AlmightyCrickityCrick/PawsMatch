@@ -35,7 +35,6 @@ import {RouterLink} from "vue-router"
 <style scoped>
     *{
         box-sizing: border-box;
-        z-index: 2;
     }
     *:hover {
         cursor: none;
@@ -49,15 +48,16 @@ import {RouterLink} from "vue-router"
 
 
     .header {
-        padding: 12px 20px;
         padding-right: 40px;
         margin: 0;
         width: 100%;
-        height: 65px;
+        height: 70px;
         display: block;
         background-color: white;
         position: fixed;
         align-items: center;
+        box-shadow: 0 0 100px #00150514;
+        z-index: 3;
     }
 
     .header a {
@@ -68,13 +68,25 @@ import {RouterLink} from "vue-router"
     }
 
     .header img {
-        height: 45px;
+        height: 70px;
+        padding: 10px 10px 10px 20px;
+        margin-left: -3px;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
+    .header img:hover {
+        box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.076), 0 6px 20px 0 rgba(138, 125, 155, 0.234);
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
+    }
+
 
     .header nav {
         float: right;padding-top: 5px;
     }
-
+    ul {
+        padding: 14px 20px;
+    }
     .header ul li {
         display: inline-block;
         margin-left: 2rem;
@@ -84,13 +96,18 @@ import {RouterLink} from "vue-router"
         text-decoration: none;
         color: #000000;
         font-size: 18pt;
-        transition: color 0.3s ease;
         font-family: "Merriweather", serif;
         font-weight: 400;
         font-style: normal;
+        padding: 15px 0;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
 
     .header ul li a:hover {
         color: rgb(170, 20, 20);
+        text-shadow: 0 4px 10px rgba(157, 161, 170, 0.157), 0 6px 20px rgba(138, 125, 155, 0.546);
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
 </style>

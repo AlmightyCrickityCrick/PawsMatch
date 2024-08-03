@@ -1,10 +1,12 @@
 <template>
+<div>
   <Header />
-  <div>
+  <div id="body">
     <RouterView />
   </div>
   <cursor/>
   <Footer />
+</div>
 </template>
 
 <script setup>
@@ -15,8 +17,10 @@ import cursor from './components/cursor.vue';
 </script>
 
 <style scoped>
-div {
-  padding-top: 65px;
+*{
   cursor: none;
+}
+#body {
+  padding-top: 65px;
 }
 </style>

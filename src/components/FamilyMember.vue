@@ -32,12 +32,20 @@
         height: 120px;
         border-radius: 50%;
         object-fit: cover;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
+    }
+
+    .membru img:hover {
+        box-shadow: 0 4px 8px 0 rgba(157, 161, 170, 0.076), 0 6px 20px 0 rgba(138, 125, 155, 0.234);
+        transition-duration: 0.3s;
+        transition-timing-function: cubic-bezier(0.4, 0.06, 0.14, 1);
     }
 
     .membru h3 {
         color: #354D32;
         font-size: 23px;
-        margin: 5px 0 5px;
+        margin: 5px 0 0px;
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
@@ -50,7 +58,7 @@
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-        margin-top: 5px;
+        margin-top: 0px;
         margin-bottom: 5px;
     }
 </style>
