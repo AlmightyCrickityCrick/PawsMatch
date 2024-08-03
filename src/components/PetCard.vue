@@ -30,6 +30,9 @@
 </script>
 
 <style scoped>
+*:hover {
+        cursor: none;
+}
     .pet {
         padding: 10px;
     }
