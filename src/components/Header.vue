@@ -75,14 +75,17 @@ import {RouterLink} from "vue-router"
     .toggle-outline {
         width: 40px;
         height: 20px;
-        outline: 2.5px solid red;
+        outline: 2.5px solid #c55850c1;
         border-radius: 10px;
         padding: 2.2px;
         margin-bottom: 2px;
-        margin-right: -10px;
+        margin-right: 10px;
     }
     .inactive .toggle-outline:hover{
         cursor: pointer;
+    }
+    .active .toggle-outline:hover{
+        cursor: pointer !important;
     }
     .toggle {
         width: 10px;
@@ -93,12 +96,19 @@ import {RouterLink} from "vue-router"
     .toggle.inactive:hover{
         cursor: pointer;
     }
+    .toggle.active:hover{
+        cursor: pointer !important;
+    }
     .toggle.active {
-        background-color: red;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier( 0.6, 0.04, 0.77, 0.99 );
+        background-color: #C55850;
         margin: 0 0 0 1px;
     }
     .toggle.inactive {
-        background-color: rgb(0, 0, 0);
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier( 0.6, 0.04, 0.77, 0.99 );
+        background-color: #817474;
         margin: 0 0 0 20px;
     }
 
