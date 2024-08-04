@@ -1,6 +1,6 @@
 <template>
     <div class="body">
-        <div ref="cursor">
+        <div :class="isCursorToggled ? 'active' : 'inactive'" ref="cursor">
             <div class="cursor__ball cursor__ball--big">
                 <div class="circle"><p></p></div>
             </div>
@@ -18,6 +18,11 @@
   export default {
     name: 'CursorComponent',
 
+    props: {
+      isCursorToggled: {
+        default: true
+      },
+    },
     mounted() {
       this.initCursor();
     },
@@ -36,14 +41,14 @@
       },
       onMouseMove(bigBall, smallBall, e) {
         gsap.to(bigBall, {
-          duration: 0.4,
+          duration: 0.2,
           x: e.clientX - 10,
           y: e.clientY - 8
         });
         gsap.to(smallBall, {
-          duration: 0.1,
-          x: e.clientX - 1,
-          y: e.clientY - 2
+          duration: 0.006,
+          x: e.clientX - 0.3,
+          y: e.clientY - 0.3
         });
       },
       onMouseHover(bigBall) {
@@ -58,17 +63,25 @@
           scale: 1
         });
       },
-
-      cursorIsHovering() {
-        
-      }
     }
   };
   </script>
-  
+
+  <style>
+.active {
+  cursor: none;
+}
+.inactive {
+  cursor: pointer;
+}
+</style>
   <style scoped>
-  .body {
-    cursor: none;
+
+  .active {
+    visibility: visible;
+  }
+  .inactive {
+    visibility: hidden;
   }
   .cursor__ball--big{
     width: 40px;

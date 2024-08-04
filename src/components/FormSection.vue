@@ -144,10 +144,6 @@
     *{
         box-sizing: border-box;
     }
-*:hover {
-        cursor: none;
-}
-
     label, input, select {
         font-size: 18px;
     }

@@ -1,11 +1,19 @@
 <template>
 <div>
-  <Header />
+  <Header 
+  @cursor-is-toggled="toggleCursorOn"
+  @cursor-not-toggled="toggleCursorOff"
+  :isCursorToggled
+  />
   <div id="body">
-    <RouterView />
+    <RouterView/>
   </div>
-  <cursor/>
-  <Footer />
+  <cursor
+  :isCursorToggled
+  />
+  <Footer
+  :isCursorToggled
+  />
 </div>
 </template>
 
@@ -16,10 +24,26 @@ import Footer from './components/Footer.vue';
 import cursor from './components/cursor.vue';
 </script>
 
-<style scoped>
-*{
-  cursor: none;
+<script>
+export default {
+
+  data() {
+    return {
+      isCursorToggled: Boolean
+    }
+  },
+  methods: {
+    toggleCursorOn() {
+      this.isCursorToggled = true
+    },
+    toggleCursorOff() {
+      this.isCursorToggled = false
+    },
+  },
 }
+</script>
+
+<style scoped>
 #body {
   padding-top: 65px;
 }

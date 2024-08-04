@@ -19,10 +19,6 @@
 </script>
 
 <style  scoped>
-
-*:hover {
-        cursor: none;
-}
     .footer {
         margin-top: 57px;
         background-color: rgba(135, 147, 147, 0.692);

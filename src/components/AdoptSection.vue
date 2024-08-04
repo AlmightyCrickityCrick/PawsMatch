@@ -20,9 +20,6 @@ import {RouterLink} from "vue-router"
 </script>
 
 <style scoped>
-*:hover {
-        cursor: none;
-}
     /* Stiluri pentru containerul principal */
     .container {
         text-align: center;

@@ -9,6 +9,15 @@
         <nav>
             <ul>
                 <li>
+                    <div class="toggle-outline"
+                    @click="cursorToggle"
+                    >
+                        <div class="toggle"
+                        :class="this.newCursorIsToggled ? 'active' : 'inactive'">
+                        </div>
+                    </div>
+                </li>
+                <li>
                     <RouterLink to="/" >Home</RouterLink>
                 </li>
                 <li>
@@ -28,16 +37,56 @@ import {RouterLink} from "vue-router"
     export default {
         components:{
             RouterLink
-        }
+        },
+
+        data() {
+            return {
+                newCursorIsToggled: true
+            }
+        },
+        methods: {
+            cursorToggle() {
+                this.newCursorIsToggled = !this.newCursorIsToggled
+                if(this.newCursorIsToggled) {
+                    this.$emit('cursorIsToggled')
+                }
+                if(!this.newCursorIsToggled) {
+                    this.$emit('cursorNotToggled')
+                }
+            }
+        },
     }  
 </script>
 
 <style scoped>
+
+    .toggle-outline {
+        width: 40px;
+        height: 20px;
+        outline: 2.5px solid red;
+        border-radius: 10px;
+        padding: 2.2px;
+        margin-bottom: 2px;
+        margin-right: -10px;
+    }
+    .toggle {
+        width: 10px;
+        height: 10px;
+        border-radius: 200px;
+        padding: 7.5px;
+    }
+    .toggle.active {
+        background-color: red;
+        margin: 0 0 0 1px;
+    }
+    .toggle.inactive {
+        background-color: rgb(0, 0, 0);
+        margin: 0 0 0 20px;
+    }
+
+
     *{
         box-sizing: border-box;
-    }
-    *:hover {
-        cursor: none;
     }
 
     ul {
