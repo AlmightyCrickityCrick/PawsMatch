@@ -1,6 +1,6 @@
 
 <template>
-    <div class="header">
+    <div :class="isCursorToggled ? 'active' : 'inactive'"  class="header">
         <a href="#">
             <img src="../../public/Logo_text.png" alt="logo" id="header_logo">
 
@@ -39,6 +39,11 @@ import {RouterLink} from "vue-router"
             RouterLink
         },
 
+        props: {
+            isCursorToggled: {
+                default: true
+            },
+        },
         data() {
             return {
                 newCursorIsToggled: true
@@ -60,6 +65,13 @@ import {RouterLink} from "vue-router"
 
 <style scoped>
 
+.active li a:hover, img:hover{
+    cursor: none;
+}
+.inactive li a:hover, img:hover{
+    cursor: pointer;
+}
+
     .toggle-outline {
         width: 40px;
         height: 20px;
@@ -69,11 +81,17 @@ import {RouterLink} from "vue-router"
         margin-bottom: 2px;
         margin-right: -10px;
     }
+    .inactive .toggle-outline:hover{
+        cursor: pointer;
+    }
     .toggle {
         width: 10px;
         height: 10px;
         border-radius: 200px;
         padding: 7.5px;
+    }
+    .toggle.inactive:hover{
+        cursor: pointer;
     }
     .toggle.active {
         background-color: red;

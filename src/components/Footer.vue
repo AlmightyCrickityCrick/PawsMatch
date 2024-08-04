@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div :class="isCursorToggled ? 'active' : 'inactive'" class="footer">
         <div class="grid">
             <div class="icon"> <a href="#"><img src="/inst.png" alt="instagram" id="im1"></a></div>
             <div class="icon"><a href="#"><img
@@ -15,10 +15,19 @@
 
 <script>
     export default {
+        props: {
+            isCursorToggled: {
+                default: true
+            },
+        },
     }
 </script>
 
 <style  scoped>
+
+.active img:hover {
+    cursor: none;
+}
     .footer {
         margin-top: 57px;
         background-color: rgba(135, 147, 147, 0.692);

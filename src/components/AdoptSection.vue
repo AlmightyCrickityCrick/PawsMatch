@@ -23,6 +23,7 @@ import {RouterLink} from "vue-router"
     /* Stiluri pentru containerul principal */
     .container {
         text-align: center;
+        padding-bottom: 100px;
     }
 
     /* Stiluri pentru emblema */

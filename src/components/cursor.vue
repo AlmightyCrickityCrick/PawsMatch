@@ -71,12 +71,19 @@
 .active {
   cursor: none;
 }
+.active:hover {
+  cursor: none;
+}
 .inactive {
-  cursor: pointer;
+  cursor: default;
 }
 </style>
   <style scoped>
 
+  .body{
+    background-color: red;
+    margin: -100px;
+  }
   .active {
     visibility: visible;
   }

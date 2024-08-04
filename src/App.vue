@@ -5,7 +5,8 @@
   @cursor-not-toggled="toggleCursorOff"
   :isCursorToggled
   />
-  <div id="body">
+  <div id="body" :class="isCursorToggled ? 'active' : 'inactive'"
+  >
     <RouterView/>
   </div>
   <cursor
@@ -46,5 +47,8 @@ export default {
 <style scoped>
 #body {
   padding-top: 65px;
+}
+  .active *{
+    cursor: none !important;
 }
 </style>
